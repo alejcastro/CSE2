@@ -8,16 +8,16 @@ public class Cyclometer{
 public static void main (String[] args){
     
 // write all input data
-int secsTrip1=480;  //
-int secsTrip2=3220; //
-int countsTrip1=1561;// 
-int countsTrip2=9037; //
+int secsTrip1=480;  // time of 1 trip
+int secsTrip2=3220; //time of 2 trip
+int countsTrip1=1561;// counts of 1 trip
+int countsTrip2=9037; //counts of 2 trip
 // intermediate variables and output data
 double wheelDiameter=27.0,  //
 PI=3.14159, //this is the value of the constant Pi
-feetPerMile=5280,
-inchesPerFoot=12,
-secondsPerMinute=60; //
+feetPerMile=5280,// the numbers of feet per mile
+inchesPerFoot=12,// the number of inches per foot
+secondsPerMinute=60; // the numbers of seconds in a minute
 double distanceTrip1, distanceTrip2, totalDistance;//
 //print out the numbers that you have stored in the variable seconds and the counts
 System.out.println("Trip 1 took "+
@@ -32,10 +32,10 @@ distanceTrip1=countsTrip1*wheelDiameter*PI;
 //in inches times PI)
 distanceTrip1/=inchesPerFoot*feetPerMile; // this will give the distance in mile
 distanceTrip2=countsTrip2*wheelDiameter*PI/inchesPerFoot/feetPerMile;
-totalDistance=distanceTrip1+distanceTrip2;
+totalDistance=distanceTrip1+distanceTrip2;// the formula for total distance
 //Print out the output data
 System.out.println("Trip 1 was "+distanceTrip1+" miles");
 System.out.println("Trip 2 was "+distanceTrip2+" miles");
-System.out.println("The total distance was"+totalDistance+" miles");
+System.out.println("The total distance was "+totalDistance+" miles");
 }//end main method
 }// end of class
