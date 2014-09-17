@@ -1,10 +1,10 @@
 ///////////////////////////////////////////////////////////////////////
 // Alejandro Castro 
-// lab03
-//BigMac Program
+// hw03
+//Bicycle Program
 // as the cyclometer program, this program will compute the distance and velocity of a trip.
-//the only difference is that we will use the scanner class to accomplish it. by allowing the
-//user to enter the numebr of counts and second of the trip
+//the only difference is that we will use the scanner class to accomplish it. By allowing the
+//user to enter the number of counts and second of the trip
 //for using the scanner this should be the first statement in your program:
 import java.util.Scanner;
 //define the class

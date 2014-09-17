@@ -2,7 +2,9 @@
 // Alejandro Castro 
 // hw03
 //Root Program
-// this program will compute the cube root of any number you choose by estimating it
+// This program will compute the cube root of any number you choose by estimating it
+// we will guess the right answer by using a formula over and over again until 
+//our estimation is accurate enough
 // for accomplishing it we will use a scanner to read the number inserted
 //for using the scanner this should be the first statement in your program:
 import java.util.Scanner;
@@ -33,7 +35,7 @@ guess5=(guess4*guess4*guess4+x)/(3*guess4*guess4);
 System.out.println("the cube root is "+guess5+" ="+guess5+"*"+guess5+"*"+guess5+"="+
 guess5*guess5*guess5+" estimated");// for veryfing your answer increased it to the 3rd power
 // to see if it is similar to the user's number
-}// end class
 }// end main method
+}// end class
 
     

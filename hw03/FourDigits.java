@@ -2,7 +2,7 @@
 // Alejandro Castro 
 // hw03
 //Four Digits Program
-// this program will compute the first for decimal place of a number inserted by
+// this program will compute the first four decimal places of a number inserted by
 // the user for accomplishing it we will use a scanner to read the number inserted
 //for using the scanner this should be the first statement in your program:
 import java.util.Scanner;
@@ -24,8 +24,8 @@ number1=(int)(number);// we create another variable to eliminate de decimals thi
 number2=(number-number1);// now we subtract number1 to number so we can get just the decimals
 // print the value
 System.out.println("the first 4 decimal places are " +((int)(number2*10000)/10000.0)+" of the number");
-// we multiplied by a 10000 and divide it by 10000.0 to get just 4 decimal places
+// we multiplied by a 10000 and divide it by 10000.0 to get just 4 decimal places we need
 
-}//end of class
-}// end of main method
+}//end of main methd
+}// end of class
 
