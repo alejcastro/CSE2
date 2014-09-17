@@ -18,7 +18,7 @@ PI=3.14159, //this is the value of the constant Pi
 feetPerMile=5280,// the numbers of feet per mile
 inchesPerFoot=12,// the number of inches per foot
 secondsPerMinute=60; // the numbers of seconds in a minute
-double distanceTrip1, distanceTrip2, totalDistance;//
+
 //print out the numbers that you have stored in the variable seconds and the counts
 System.out.println("Trip 1 took "+
 (secsTrip1/secondsPerMinute)+" minutes and had "+countsTrip1+" counts.");
@@ -34,7 +34,7 @@ distanceTrip1/=inchesPerFoot*feetPerMile; // this will give the distance in mile
 distanceTrip2=countsTrip2*wheelDiameter*PI/inchesPerFoot/feetPerMile;
 totalDistance=distanceTrip1+distanceTrip2;// the formula for total distance
 //Print out the output data
-System.out.println("Trip 1 was "+distanceTrip1+" miles");
+System.out.println("Trip 1 was "+distanceTrip1+" miles and took" +nHours+ "hours");
 System.out.println("Trip 2 was "+distanceTrip2+" miles");
 System.out.println("The total distance was "+totalDistance+" miles");
 }//end main method
