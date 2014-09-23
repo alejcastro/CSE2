@@ -61,8 +61,8 @@ if(frenchFries.equals("Y")||frenchFries.equals("y")||frenchFries.equals("N")||fr
     
     if(frenchFries.equals("Y")||frenchFries.equals("y"))
  {    
-     pFrenchFries=2.43;
-    System.out.println("Your cost for french Fries is $2.43 dollars");
+     pFrenchFries=2.15;
+    System.out.println("Your cost for french Fries is $2.15 dollars");
  }
 }
 else{
@@ -73,7 +73,3 @@ else{
 System.out.println("The total cost of the meal is "+((int)((nBigMacs*2.22+pFrenchFries)*100)/100.0+ " dollars have a good day"));
 }
 }
-
-
-
-//that scanner has the next int
