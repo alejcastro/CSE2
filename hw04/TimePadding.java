@@ -1,65 +1,64 @@
 ///////////////////////////////////////////////////////////////////////
 // Alejandro Castro 
-// lab03
-//BigMac Program
-// this program will compute the cost of buying BigMacs. this will compute the co
-//cost per big mac, and the percentage tax. this wil depend on the state and 
-//finally the total cost. we will use the scanner class to accomplish it.
+// hw04
+//Time Padding
+// this program will compute the  the hours minutes and seconds after the user enter a number of seconds
 //for using the scanner this should be the first statement in your program
 //for using the scanner this should be the first statement in your program:
 import java.util.Scanner;
 //define the class
 public class TimePadding {
-    //main method 
-    public static void main(String[] args) {
-        Scanner myScanner;
-        myScanner = new Scanner(System.in);
-        System.out.print(
-            "Enter the number of Big Macs(an integer > 0): "); //this will allow the user
-        //to enter the number of BigMacs
-        // accept user input with the following statement
-        double nCourse, semester;
-        int year; // this command tell the computer
-        if (myScanner.hasNextInt()) {
-            nCourse = myScanner.nextInt();
-            
-            year = (int)((nCourse) / 100);
-            semester = ((nCourse / 100.0) - year);
-            
-            semester=semester*100.0;
-            
-            semester=(int)(semester+.5);
-            //semester = ((int)(semester) * 10) / 10.0;
-            
+//main method 
+public static void main(String[] args) {
+Scanner myScanner;
+myScanner=new Scanner(System.in);
+//this allow the  user to enter the number of seconds
+System.out.print (
+"Enter the number of seconds(an integer > 0): ");//this will allow the user
 
-            //System.out.println("You ordered "+nBigMacs+" for $2.22 each giving a total cost of "+nBigMacs*2.22+" dollars" );
+// accept user input with the following statement
+int nSeconds;// this command tell the computer
+// we need to be sure the user enter a integer if not we should tell the user
+if(myScanner.hasNextInt())
+{
+    nSeconds= myScanner.nextInt();
 
-        }
-        else {
-            System.out.println("You did not enter an int");
-            return; //leaves the program, i.e.
-            //the program terminates
-        }
-        if (nCourse > 186510 && nCourse < 201440) {
-            if (semester == 10 || semester == 20 || semester == 30 || semester == 40) {
-                if (semester == 10) {
-                    System.out.println("the course was offered in spring the year " + year + " ");
-                }
-                if (semester == 20) {
-                    System.out.println("the course was offered in summer 1 the year " + year + " ");
-                }
-                if (semester == 30) {
-                    System.out.println("the course was offered in summer 2 the year " + year + " ");
-                }
-                if (semester == 40) {
-                    System.out.println("the course was offered in fall the year " + year + " ");
-                }
-            }
-            else
-                System.out.println(" " + semester  + "is not a legitimate semester");
-        }
-        else {
-            System.out.println("enter a number between 186510 and 201440");
-        }
-    }
+
+ 
 }
+else{
+    System.out.println("You did not enter an int");
+  return;    //leaves the program, i.e.
+                //the program terminates
+}
+// we initialize our variables with doubles and int for getting the decimal places of our subtactions
+double nHours,nMinutes,Reminder;
+int nIHours,nIMinutes;
+// we first find the number of hours by divinding the seconds by 3600
+// is important the nHours is a double for getting the decimals of it 
+nHours= nSeconds/3600.00000;
+// now we made nHours a int
+nIHours=(int)(nHours);
+// we subtract nIHours to nHours to get just the reminder and multiplied it to get the number of minutes
+nMinutes=(nHours-nIHours)*60;
+// we make our nMinutes an integer
+nIMinutes=(int)(nMinutes);// 
+// we subtract nIMinutes to nMinutes to get our reminder and multiplied it by 60 to get our seconds
+Reminder=(nMinutes-nIMinutes)*60;
+int intReminder=((int)(Reminder)*10)/10;// we eliminate any unwanted decimal places
+// we print our answer
+// the hard part of this is getting the form x:0x:0x however for accomplishing it we use print f and add state 2 decimal places to our
+//values of minutes and seconds
+System.out.print("The Time is    "+nIHours+":");
+System.out.printf("%02d",nIMinutes);
+System.out.print(":");
+System.out.printf("%02d%n",intReminder);
+
+    
+}
+}
+
+
+
+
+
