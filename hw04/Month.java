@@ -75,7 +75,7 @@ System.out.println("the month has 29 days ");
 }
 return;}// this will end  the program after printing the number of days
 // now we need to know if the user gave a month between 1 and 12
-if(month>0&&month<13)
+if(month>=1&&month<=12)
 { 
 // this are all the months that have 31 days    
 if(month==1||month==3||month==5||month==7||month==8||month==10||month==12)     

@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////
 // Alejandro Castro 
-// hw04
+// lab03
 //Time Padding
 // this program will compute the  the hours minutes and seconds after the user enter a number of seconds
 //for using the scanner this should be the first statement in your program
@@ -31,6 +31,8 @@ else{
   return;    //leaves the program, i.e.
                 //the program terminates
 }
+if(nSeconds<=86400)
+{
 // we initialize our variables with doubles and int for getting the decimal places of our subtactions
 double nHours,nMinutes,Reminder;
 int nIHours,nIMinutes;
@@ -55,6 +57,10 @@ System.out.print(":");
 System.out.printf("%02d%n",intReminder);
 
     
+}
+else 
+{System.out.println("the number of seconds you enter is greater than a day");
+}
 }
 }
 
