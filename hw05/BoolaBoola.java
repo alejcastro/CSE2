@@ -40,7 +40,7 @@ public class BoolaBoola {
                 variable1 = false;
                 break;
 //we make the random true or false for the second boolean
-        }
+        }// end of boolean 1 switch
         switch (number2) {
             case 1:
                 variable2 = true;
@@ -49,7 +49,7 @@ public class BoolaBoola {
             case 0:
                 variable2 = false;
                 break;
-        }
+        }// end of boolean 2 switch
         //we make the random true or false for the third boolean
         switch (number3) {
             case 1:
@@ -61,7 +61,7 @@ public class BoolaBoola {
                 break;
                 
                 //now we make the random and and or combinations
-        }
+        }// end of boolean 2 switch
         switch (randomtry) {
             //first combinations of ands and ors
             case 1:
@@ -70,13 +70,12 @@ public class BoolaBoola {
 // we ask the user the question
                 System.out.println("does " + variable1 + " &&" + variable2 + " || " + variable3 + " have the value true(t/T) or false(f/F)? ");
                 answer = myScanner.next();
-
-
+                // compare the answers
                 if (result == true&&(answer.equals("T") || answer.equals("t"))) {
                     // if the result is the same as the answer is correct other than that is wrong
                     if (answer.equals("T") || answer.equals("t")) {
                         System.out.println("CORRECT");
-                    }
+                    }// end of  the if statment that compare the answers
 
                     else {
                         System.out.println("INCORRECT");
@@ -87,7 +86,7 @@ public class BoolaBoola {
 
             case 2:
                 result = variable1 && variable2 && variable3;
-// we ask the user the question
+                   // we ask the user the question
                 System.out.println("does " + variable1 + " &&" + variable2 + " && " + variable3 + " have the value true(t/T) or false(f/F)? ");
                 answer = myScanner.next();
                 // if the result is the same as the answer is correct other than that is wrong
@@ -95,11 +94,11 @@ public class BoolaBoola {
 
                 if (result == true&&(answer.equals("T") || answer.equals("t"))) {
                         System.out.println("CORRECT");
-                }
+                }// end of  the if statment that compare the answers
                 else {
                     System.out.println("INCORRECT");
 
-                }
+                }// end else statement
 
                 break;
                 //3rd combination of ands and ors
@@ -115,11 +114,11 @@ public class BoolaBoola {
                     // if the result is the same as the answer is correct other than that is wrong
                    
                         System.out.println("CORRECT");
-                    }
+                    }// end of  the if statment that compare the answers
 
                     else {
                         System.out.println("INCORRECT");
-                    }
+                    }//end of else stamenent
                 
                 break;
                 // 4rth and last combination of ands and ors
@@ -133,14 +132,14 @@ public class BoolaBoola {
                 if (result == true&&(answer.equals("T") || answer.equals("t"))) {
                     // if the result is the same as the answer is correct other than that is wrong
                         System.out.println("CORRECT");
-                    }
+                    }// end of if statement
 
                     else {
                         System.out.println("INCORRECT");
-                    }
+                    }//end of else statemnt
                     break;
-                }
+                }// and of the switch for random combinations of ands and ors
                 
-        }
-    }
+        }//end of main method
+    }//end of class
 
